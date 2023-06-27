@@ -19,8 +19,19 @@ typedef struct listint_s
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
-
+/* 0-bubble_sort.c */
 void bubble_sort(int *array, size_t size);
+/* 1-insertion_sort.c */
 void insertion_sort_list(listint_t **list);
+/* 2-selection_sort.c */
+void selection_sort(int *array, size_t size);
+/* 3-quick_sort.c */
+void quick_sort(int *array, size_t size);
+void swap_elements(int *array, int idx1, int idx2);
+int partition(int *array, int low, int high, size_t size);
+void quick_sort_recursive(int *array, int low, int high, size_t size);
+
+/* advanced tasks */
+
 
 #endif /* __SORT__ */
