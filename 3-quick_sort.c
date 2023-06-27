@@ -63,6 +63,7 @@ void quick_sort_recursive(int *array, int low, int high, size_t size)
 	if (low < high)
 	{
 		int pivot = partition(array, low, high, size);
+	
 		quick_sort_recursive(array, low, pivot - 1, size);
 		quick_sort_recursive(array, pivot + 1, high, size);
 	}
@@ -78,6 +79,7 @@ void quick_sort_recursive(int *array, int low, int high, size_t size)
 void swap_elements(int *array, int idx1, int idx2)
 {
 	int temp = array[idx1];
+
 	array[idx1] = array[idx2];
 	array[idx2] = temp;
 }
